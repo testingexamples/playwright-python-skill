@@ -94,7 +94,7 @@ def demo() -> None:
         page = context.new_page()
 
         try:
-            page.goto("https://testingexamples.github.io")
+            page.goto("https://testingexamples.github.io/en-001/practice/")
 
             # Find an element by id.
             element_by_id: Locator = page.locator('#id-example-1')
@@ -160,7 +160,7 @@ boilerplate to write or clean up:
 from playwright.sync_api import Page, expect
 
 def test_id_example_has_expected_text(page: Page) -> None:
-    page.goto("https://testingexamples.github.io")
+    page.goto("https://testingexamples.github.io/en-001/practice/")
     expect(page.locator("#id-example-1")).to_have_text("Id Example 1")
 ```
 
@@ -199,7 +199,7 @@ site, see
 
 - [demo-playwright-python](https://github.com/joelparkerhenderson/demo-playwright-python) —
   the locator-strategy walkthrough this skill's worked example is trimmed
-  from, run against https://testingexamples.github.io.
+  from, run against https://testingexamples.github.io/en-001/practice/.
 - [demo-playwright-python-for-google-search](https://github.com/testingexamples/demo-playwright-python-for-google-search) —
   same patterns applied to Google Search. **Illustrative only** — Google's
   Terms of Service restrict automated querying of Google Search, so this is
@@ -211,7 +211,7 @@ site, see
   a real pytest test suite with real assertions against
   https://www.nhs.wales/.
 - https://playwright.dev/python/docs/intro — official Python docs.
-- https://testingexamples.github.io/ — the free fixture page these demos
+- https://testingexamples.github.io/en-001/practice/ — the free fixture page these demos
   target; safe to run against repeatedly.
 
 ---
